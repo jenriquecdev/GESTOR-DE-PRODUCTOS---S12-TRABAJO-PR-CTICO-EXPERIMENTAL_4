@@ -31,7 +31,8 @@ pip install PySide6
 # 4. Lanzar la aplicación gráfica
 python main.py
 ```
-2. Cómo usar en Windows
+
+### 2. Cómo usar en Windows
 
 Abra la consola de comandos (Símbolo del sistema / CMD o PowerShell), navegue hasta la carpeta del proyecto y ejecute de forma secuencial:
 
@@ -50,7 +51,7 @@ python main.py
 ```
 
 
-3. Cómo usar en Linux (Ubuntu/Debian/Fedora)
+### 3. Cómo usar en Linux (Ubuntu/Debian/Fedora)
 
 Abra su terminal, posiciónese en el directorio del proyecto y ejecute de forma secuencial:
 
