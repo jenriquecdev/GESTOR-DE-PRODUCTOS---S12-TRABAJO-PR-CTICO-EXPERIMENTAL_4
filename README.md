@@ -30,8 +30,12 @@ pip install PySide6
 
 # 4. Lanzar la aplicación gráfica
 python main.py
+```
+2. Cómo usar en Windows
 
-### 2. Cómo usar en Windows
+Abra la consola de comandos (Símbolo del sistema / CMD o PowerShell), navegue hasta la carpeta del proyecto y ejecute de forma secuencial:
+
+```bash
 :: 1. Crear el entorno virtual nativo
 python -m venv env
 
@@ -43,23 +47,26 @@ pip install PySide6
 
 :: 4. Lanzar la aplicación gráfica
 python main.py
+```
 
-### 3. Cómo usar en Linux
-# 1. Instalar soporte de entornos virtuales (en algunas distros es necesario)
-sudo apt install python3-venv  # Solo si no lo tiene instalado
 
-# 2. Crear el entorno virtual
+3. Cómo usar en Linux (Ubuntu/Debian/Fedora)
+
+Abra su terminal, posiciónese en el directorio del proyecto y ejecute de forma secuencial:
+
+```bash
+# 1. Crear el entorno virtual
 python3 -m venv env
 
-# 3. Activar el entorno virtual
+# 2. Activar el entorno virtual
 source env/bin/activate
 
-# 4. Instalar la dependencia oficial de Qt para Python
+# 3. Instalar la dependencia oficial de Qt para Python
 pip install PySide6
 
-# 5. Lanzar la aplicación gráfica
+# 4. Lanzar la aplicación gráfica
 python main.py
-
+```
 ## Estructura Arquitectónica del Proyecto
 
 El código fuente ha sido modularizado siguiendo buenas prácticas de ingeniería de software para evitar dependencias cruzadas y garantizar la mantenibilidad del sistema:
@@ -68,4 +75,6 @@ El código fuente ha sido modularizado siguiendo buenas prácticas de ingenierí
 *   **`views.py` (Capa de Interfaz Gráfica):** Declara la totalidad de los componentes visuales de Qt (`QLineEdit`, `QTableWidget`, `QSpinBox`) y los organiza mediante layouts dinámicos elásticos. Mantiene un diseño limpio libre de lógica de negocio o consultas de datos.
 *   **`controller.py` (Capa Lógica / Mediador):** Actúa como el cerebro e intermediario de la aplicación. Intercepta los eventos de la interfaz gráfica a través del mecanismo de señales y slots, ejecuta las validaciones críticas de tipos de datos, interactúa con las funciones de persistencia y actualiza la pantalla dinámicamente.
 *   **`main.py` (Punto de Entrada):** Inicializa la instancia principal de `QApplication`, vincula de forma segura los componentes del controlador con la vista y arranca el ciclo de ejecución de la aplicación de escritorio.
+
+
 
