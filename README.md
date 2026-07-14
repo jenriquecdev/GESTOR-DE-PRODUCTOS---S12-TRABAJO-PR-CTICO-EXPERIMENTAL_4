@@ -1,5 +1,5 @@
-#S15-COMPONENTE PRACTICO_2 -- SISTEMA DE GESTIÓN DE PRODUCTOS
-# Sistema de Gestión de Productos (Desktop App)
+
+# S15 - COMPONENTE PRÁCTICO_2 - Sistema de Gestión de Productos (Desktop App)
 
 Aplicación de escritorio multiplataforma desarrollada en **Python** utilizando el framework gráfico **Qt (PySide6)** y el motor de base de datos relacional embebido **SQLite**. El sistema implementa una arquitectura modular con separación estricta de responsabilidades (GUI, Controlador y Persistencia) y seguridad integrada mediante consultas SQL parametrizadas.
 
